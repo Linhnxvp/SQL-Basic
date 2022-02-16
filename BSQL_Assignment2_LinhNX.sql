@@ -20,16 +20,7 @@ CREATE TABLE Trainee(
 )
 
 INSERT INTO Trainee(full_name, birth_date, gender, et_iq, et_gmath, et_english, training_class, evaluation_notes) VALUES
-					('linhnx','11-3-2000',0,15,11,25,'JAVA04','nothing'),
-					('phonglh','4-3-2000',1,10,10,10,'JAVA04','nothing'),
-					('phulc','5-3-2000',0,12,13,24,'JAVA04','nothing'),
-					('hao','7-5-2000',0,11,12,23,'JAVA04','nothing'),
-					('minh','5-7-2000',0,12,16,24,'JAVA04','nothing'),
-					('tung','6-9-2000',0,13,20,21,'JAVA04','nothing'),
-					('dung','12-11-2000',0,20,11,12,'JAVA04','nothing'),
-					('dinh','5-3-2000',0,10,16,20,'JAVA04','nothing'),
-					('long','5-9-2000',0,12,19,10,'JAVA04','nothing'),
-					('phuc','11-6-2000',0,11,10,30,'JAVA04','nothing')
+
 
 SELECT * FROM Trainee
 

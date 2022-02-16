@@ -36,30 +36,7 @@ ADD image_Link varchar(50) UNIQUE (image_Link)
 
 --b
 
-INSERT INTO Movie(movie_Name, duration, genre, director, money_At_Office, image_Link, comment) VALUES				
-				('Eternals',140,2,'Chloe Zhao',100000,'google',null),
-				('The Power of the dog',126,1,'Jane Campion',208000,'google1',null),
-				('Red notice',117,4,'Rawson Marshall Thurber',500000,'google2',null),
-				('Kingdom: Ashin of the North',92,6,'Kim Sung Hoon',150000,'google3',null),
-				('Alive',100,1,'II Cho',100000,'google4',null),
-				('Eternals',140,2,'Chloe Zhao',100000,'google5',null)
-				
-INSERT INTO Actor(actor_name,age,average_Salary,nationality) VALUES
-				('Salma Hayek',60,10000,'Americian'),
-				('Angelina Jolie',28,12000,'Americian'),
-				('Richard Madden',55,20000,'Korean'),
-				('Dwayne Johnson',32,30000,'Americian'),
-				('Reynolds',31,25000,'Americian')
 
-INSERT INTO Actedln(idM, idA, number_Of_View, evaluate) VALUES
-				(1,2,100000,4),
-				(2,1,200000,3),
-				(3,4,300000,1),
-				(4,5,400000,4),
-				(5,3,500000,5),
-				(1,1,500000,5),
-				(1,3,500000,5),
-				(1,4,500000,5)
 
 SELECT * FROM Movie
 SELECT * FROM Actor
@@ -85,7 +62,7 @@ ORDER BY average_Salary
 SELECT movie_Name
 FROM Movie m INNER JOIN Actedln ac ON m.idM=ac.idM
 				INNER JOIN Actor a ON ac.idA=a.idA
-WHERE a.actor_name = 'Dwayne Johnson'
+WHERE a.actor_name = ''
 
 --f
 SELECT m.idM, movie_Name

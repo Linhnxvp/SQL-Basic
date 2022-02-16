@@ -61,33 +61,7 @@ DROP COLUMN description
 
 -----Q4
 --a
-INSERT INTO Department(deptName, note) VALUES
-						('Java', 'nothing'),
-						('C#', 'nothing'),
-						('Python', 'nothing'),
-						('JS', 'nothing'),
-						('C/C++', 'nothing')
 
-INSERT INTO Employee(empNo, empName, email, birthDay, deptNo, mgrNo, startDate, salary, level, status, note) VALUES
-			('e01','linh','linhnx5@gmail.com', '11-3-2000', 1, 1, '1-1-2022',1000,5,0,'nothing'),
-			('e02','hung','hung@gmail.com', '1-1-2000', 1, 1, '1-1-2022',2000,3,0,'nothing'),
-			('e03','phong','phong@gmail.com', '11-5-2000', 2, 1, '1-1-2022',100,1,1,'nothing'),
-			('e04','phu','phu@gmail.com', '9-3-2000', 3, 1, '1-1-2022',1100,6,0,'nothing'),
-			('e05','minh','minh@gmail.com', '7-7-2000', 4, 1, '1-1-2022',500,5,0,'nothing')
-
-INSERT INTO Skill(skillName,note) VALUES
-				('Java','nothing'),
-				('C#','nothing'),
-				('Python','nothing'),
-				('JS','nothing'),
-				('C/C++','nothing')
-
-INSERT INTO Emp_Skill(skillNo, empNo, skillLevel, regDate) VALUES
-					(1,'e01',3,'1-1-2022'),
-					(1,'e02',2,'1-1-2022'),
-					(2,'e03',1,'1-1-2022'),
-					(3,'e04',3,'1-1-2022'),
-					(4,'e05',2,'1-1-2022')
 
 SELECT * FROM Department
 SELECT * FROM Employee
